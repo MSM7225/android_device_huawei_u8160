@@ -18,11 +18,11 @@ LOCAL_PATH := $(call my-dir)
 $(call inherit-product, vendor/huawei/u8160/vendor.mk)
 
 # Add device package overlay
-DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := device/huawei/u8160/overlay
     
 # Audio Config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt
+    device/huawei/u8160/prebuilt/etc/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt
     
 # Radio FM (test)
 #PRODUCT_PACKAGES += \
@@ -37,26 +37,26 @@ PRODUCT_PACKAGES += \
     
 # Bluetooth Config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf
+    device/huawei/u8160/prebuilt/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf
     
 # Touchscreen
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/melfas-touchscreen.idc \
-    $(LOCAL_PATH)/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics.idc \
-    $(LOCAL_PATH)/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/melfas-touchscreen.idc \
+    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics.idc \
+    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/melfas-touchscreen.kl \
-    $(LOCAL_PATH)/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics.kl \
-    $(LOCAL_PATH)/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
+    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/melfas-touchscreen.kl \
+    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics.kl \
+    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
     
 # Huawei Hardware setup
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/init.d/02setuphuawei:system/etc/init.d/02setuphuawei
+    device/huawei/u8160/prebuilt/etc/init.d/02setuphuawei:system/etc/init.d/02setuphuawei
 
 # Init files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/init.u8160.rc:root/init.u8160.rc \
-    $(LOCAL_PATH)/ramdisk/init.u8160.usb.rc:root/init.u8160.usb.rc \
-    $(LOCAL_PATH)/ramdisk/ueventd.u8160.rc:root/ueventd.u8160.rc
+    device/huawei/u8160/ramdisk/init.u8160.rc:root/init.u8160.rc \
+    device/huawei/u8160/ramdisk/init.u8160.usb.rc:root/init.u8160.usb.rc \
+    device/huawei/u8160/ramdisk/ueventd.u8160.rc:root/ueventd.u8160.rc
