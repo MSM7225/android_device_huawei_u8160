@@ -12,19 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# This is where we'd set a backup provider if we had one
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+LOCAL_PATH := $(call my-dir)
 
 # Inherit device specific files
-$(call inherit-product, device/huawei/u8160/device_u8160.mk)
+$(call inherit-product, device/huawei/msm7x25-common/full_msm7x25-common.mk)
+
+# Inherit device specific files
+$(call inherit-product, $(LOCAL_PATH)/device_u8160.mk)
 
 # Overrides
 PRODUCT_NAME := full_u8160
 PRODUCT_DEVICE := u8160
-PRODUCT_BRAND := Huawei
-PRODUCT_MANUFACTURER := huawei
 PRODUCT_MODEL := u8160
-PRODUCT_CHARACTERISTICS := phone

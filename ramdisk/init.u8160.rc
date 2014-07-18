@@ -1,5 +1,5 @@
 import init.u8160.usb.rc
-import init.u8160.parts.rc
+import init.msm7x25.parts.rc
 
 on early-init
 
