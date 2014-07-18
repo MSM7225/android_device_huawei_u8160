@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # Inherit products
+$(call inherit-product, vendor/huawei/msm7x25-common/vendor.mk)
 $(call inherit-product, vendor/huawei/u8160/vendor.mk)
 
 # Add device package overlay
