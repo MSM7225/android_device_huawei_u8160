@@ -39,6 +39,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/huawei/u8160/prebuilt/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf
     
+# Wi-Fi related
+PRODUCT_COPY_FILES += \
+    device/huawei/u8160/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    device/huawei/u8160/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf 
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0
+    
 # Touchscreen
 PRODUCT_COPY_FILES += \
     device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/melfas-touchscreen.idc \
