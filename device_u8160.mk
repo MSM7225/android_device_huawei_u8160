@@ -54,5 +54,4 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
     device/huawei/u8160/ramdisk/init.u8160.rc:root/init.u8160.rc \
-    device/huawei/u8160/ramdisk/init.u8160.usb.rc:root/init.u8160.usb.rc \
-    device/huawei/u8160/ramdisk/ueventd.u8160.rc:root/ueventd.u8160.rc
+    device/huawei/u8160/ramdisk/init.u8160.usb.rc:root/init.u8160.usb.rc
