@@ -47,18 +47,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
     
-# Touchscreen
-PRODUCT_COPY_FILES += \
-    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/melfas-touchscreen.idc \
-    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics.idc \
-    device/huawei/u8160/prebuilt/usr/idc/touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
-
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/melfas-touchscreen.kl \
-    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics.kl \
-    device/huawei/u8160/prebuilt/usr/keylayout/touchscreen-keys.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
-    
 # Huawei Hardware setup
 PRODUCT_COPY_FILES += \
     device/huawei/u8160/prebuilt/etc/init.d/02setuphuawei:system/etc/init.d/02setuphuawei
