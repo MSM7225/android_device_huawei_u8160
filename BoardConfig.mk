@@ -53,7 +53,7 @@ WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/wifi/firmware.bin nvram_path=/d
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/huawei/msm7x25-common
 TARGET_KERNEL_CONFIG := hw_msm7x25_cm9_defconfig
-BOARD_KERNEL_CMDLINE := mem=211M console=ttyMSM2,115200n8 androidboot.hardware=u8160 mtdparts=msm_nand:8196k@51200k(boot),8196k@59396k(recovery),1280k@67592k(misc),384k@68872k(splash),235520k@69256k(system),25600k@304776k(cache),193912k@330376k(userdata)
+BOARD_KERNEL_CMDLINE := mem=211M console=ttyMSM2,115200n8 androidboot.hardware=u8160 mtdparts=msm_nand:4608k@51200k(boot),6400k@55808k(recovery),1280k@62208k(misc),384k@63488k(splash),235520k@63872k(system),25600k@299392k(cache),199296k@324992k(userdata)
 
 # FM Radio
 BOARD_HAVE_FM_RADIO := true
